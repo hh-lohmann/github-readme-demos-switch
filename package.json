@@ -1,0 +1,18 @@
+{
+  "name": "github-readme-demos-switch",
+  "description": "Markdown snippet to switch demos link to local dev version instead of display on GitHub Pages",
+  "keywords": [],
+  "author": {
+    "name": "hh lohmann",
+    "email": "hh.lohmann@gmail.com"
+  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hh-lohmann/github-readme-demos-switch.git"
+  },
+  "bugs": "https://github.com/hh-lohmann/github-readme-demos-switch/issues",
+  "homepage": "https://hh-lohmann.github.io//github-readme-demos-switch",
+  "type": "module"
+}
