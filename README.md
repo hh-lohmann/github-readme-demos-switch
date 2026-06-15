@@ -18,25 +18,40 @@ A link to demos with really running code is a valuable feature for code projects
 
 ## Synopsis
 
-For GitHub (serving both for repo view and GitHub Pages, therefore real switch):
+* **From README to demos**
 
-```html
-<!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
-<p id="github_readme_demos_switch">
-  See <a href="https://OWNER.github.io/REPO/demos"
-  onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
-  || location.hostname === 'localhost' ){ this.href='./demos/';
-  alert( 'Dev environment detected - switching to local version' ); }"
-  >demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
-</p>
-```
+  * For GitHub (serving both for repo view and GitHub Pages, therefore real switch):
+    ```html
+    <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+    <p id="github_readme_demos_switch">
+      See <a href="https://OWNER.github.io/REPO/demos"
+      onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
+      || location.hostname === 'localhost' ){ this.href='./demos/';
+      alert( 'Dev environment detected - switching to local version' ); }"
+      >demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
+    </p>
+    ```
 
-For npm publish version (npmjs.com / npmx.dev = always repo view only = no switch)
+  * For npm publish version (npmjs.com / npmx.dev = always repo view only = no switch)
+    ```md
+    <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+    See [demos](https://OWNER.github.io/REPO/demos)
+    ```
 
-```md
-<!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
-See [demos](https://OWNER.github.io/REPO/demos)
-```
+* **From demos to README**
+
+  * Only relevant for GitHub since demos are to be rendered only there
+    ```html
+    <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+    <p id="github_readme_demos_switch">
+      See <a href="https://OWNER.github.io/REPO"
+      onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
+      || location.hostname === 'localhost' ){ this.href='/';
+      alert( 'Dev environment detected - switching to local version' ); }"
+      >main page</a> for general information about ...project-title...
+    </p>
+    ```
+
 
 ## Installation
 
