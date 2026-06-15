@@ -52,5 +52,5 @@ Best used in templates for repos.
     * NB: JavaScript is stripped off in GitHub repo view
   * "dev environment" is defined by using "localhost" or a numerical ID as hostname
     * NB RegEx: `.replace( /\d/g, '' ).replaceAll( '.', '' )` instead of `location.hostname.replace( /[\d\.]/g, '' )` to avoid `[]` which may mislead Markdown parsers to read it as link syntax
-  * Unfortunately GitHub repo view displays "<script>" tags and their contents as literal content (for security), so the JavaScript here has to be pressed into an "onclick"
+  * Unfortunately GitHub repo view displays `<script>` tags and their contents as literal content (for security), so the JavaScript here has to be pressed into an "onclick"
   * The contextualizing "on GitHub Pages for this repo" is not displayed if already on GitHub Pages via style "display:none"
