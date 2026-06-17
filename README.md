@@ -62,10 +62,17 @@ Best used in templates for repos.
 
 ## Details
 
-  * GitHub repo view does not render HTML, so a GitHub Pages view is linked
+  * GitHub repo view applies the [Disallowed Raw HTML extension](#github-flavored-markdown-disallowed-raw-html-extension), so a GitHub Pages view is linked where this restriciton is not active
   * In dev a GitHub Pages view would require a Pages build for any change to check instead of live reloading, so JavaScript is utilized here to detect a dev environment and reroute the link to the local repo instance
     * NB: JavaScript is stripped off in GitHub repo view
   * "dev environment" is defined by using "localhost" or a numerical ID as hostname
     * NB RegEx: `.replace( /\d/g, '' ).replaceAll( '.', '' )` instead of `location.hostname.replace( /[\d\.]/g, '' )` to avoid `[]` which may mislead Markdown parsers to read it as link syntax
-  * Unfortunately GitHub repo view displays `<script>` tags and their contents as literal content (for security), so the JavaScript here has to be pressed into an "onclick"
+  * The JavaScript here has to be pressed into an "onclick" since the [Disallowed Raw HTML extension](#github-flavored-markdown-disallowed-raw-html-extension) in GitHub repo view would make a `<script>` tag to literal content
+
   * The contextualizing "on GitHub Pages for this repo" is not displayed if already on GitHub Pages via style "display:none"
+
+
+## References
+
+### GitHub Flavored Markdown: Disallowed Raw HTML (extension)
+  * <https://github.github.com/gfm/#disallowed-raw-html-extension->
