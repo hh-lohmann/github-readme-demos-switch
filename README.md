@@ -6,6 +6,8 @@ Markdown snippet to switch demos link to local dev version instead of display on
 
 A link to demos with really running code is a valuable feature for code projects, and GitHub Pages is a good tool for rendering demo code hosted in a GitHub repo, but for development it makes more sense to be linked to the code for the demos instead of their rendered view on GitHub Pages.
 
+Best used in templates for repos, cf. [template-gh](#hh-lohmann-template-gh)
+
 *[hh lohmann &lt;hh.lohmann@gmail.com&gt;](mailto:hh.lohmann@gmail.com?subject=github-readme-demos-switch)*
 
 <!-- see https://hh-lohmann.github.io/github-readme-pages-switch -->
@@ -40,16 +42,25 @@ A link to demos with really running code is a valuable feature for code projects
     ```html
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
     <p id="github_readme_demos_switch">
-      See <a href="https://OWNER.github.io/REPO" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='/'; alert('Dev environment detected - switching to local version');}">main page</a> for general information about ...project-title...
+      See <a href="https://OWNER.github.io/REPO" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='/'; alert('Dev environment detected - switching to local version');}">main page</a> for general information about PROJECT-TITLE
     </p>
     ```
 
 
 ## Installation
 
-Copy appropriate example from [Synopsis](#synopsis) to the beginning of target README and replace OWNER with the owner of the repo and REPO with the name of the repo.
+* **From README to demos**
 
-Best used in templates for repos.
+  * Copy appropriate example from [Synopsis](#synopsis) to a "Demo" section of your project's README
+  
+  * Replace OWNER with the owner of the repo and REPO with the name of the repo
+
+* **From demos to README**
+
+  * Copy example from [Synopsis](#synopsis) to to the beginning of your "Demo" page
+  
+  * Replace OWNER with the owner of the repo and REPO with the name of the repo and PROJECT-TITLE with the title of your project
+
 
 
 ## Details
@@ -68,3 +79,11 @@ Best used in templates for repos.
 
 ### GitHub Flavored Markdown: Disallowed Raw HTML (extension)
   * <https://github.github.com/gfm/#disallowed-raw-html-extension->
+
+### hh lohmann: template-gh
+  * Template for new GitHub repo, especially with `gh repo create ... -p`
+  * <https://github.com/hh-lohmann/template-gh>
+
+
+<!-- see https://hh-lohmann.github.io/html-endspacer -->
+<p id="endspacer" data-version="0.2.0" title="Endspacer - helps to align scrolling and positioning link targets | Scroll up to content or click / touch to jump to page top" align="center"><a href="#top"><img alt="Endspacer: './markdown-assets/endspacer.png' missing - see https://hh-lohmann.github.io/html-endspacer" src="./markdown-assets/endspacer.png" height="1000" width="100%"><br>[top]</a></p>
