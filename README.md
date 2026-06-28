@@ -35,7 +35,7 @@ A link to demos with really running code is a valuable feature for code projects
   * For npm publish version (npmjs.com / npmx.dev = always repo view only = no switch)
     ```md
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
-    See [demos](https://OWNER.github.io/REPO/demos)
+    See [demos](https://OWNER.github.io/REPO/demos) on GitHub Pages for this repo
     ```
 
 * **From demos to README**
