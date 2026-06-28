@@ -26,14 +26,14 @@ Best used in templates for repos, cf. [template-gh](#hh-lohmann-template-gh)
     ```html
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
     <p id="github_readme_demos_switch">
-      See <a href="https://OWNER.github.io/REPO/demos" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='./demos/';alert('Dev environment detected - switching to local version');}">demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
+      See <a href="https://...repo-owner....github.io/...repo-name.../demos" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='./demos/';alert('Dev environment detected - switching to local version');}">demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
     </p>
     ```
 
   * For npm publish version (npmjs.com / npmx.dev = always repo view only = no switch)
     ```md
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
-    See [demos](https://OWNER.github.io/REPO/demos) on GitHub Pages for this repo
+    See [demos](https://...repo-owner....github.io/...repo-name.../demos) on GitHub Pages for this repo
     ```
 
 * **From demos to README**
@@ -42,7 +42,7 @@ Best used in templates for repos, cf. [template-gh](#hh-lohmann-template-gh)
     ```html
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
     <p id="github_readme_demos_switch">
-      See <a href="https://OWNER.github.io/REPO" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='/'; alert('Dev environment detected - switching to local version');}">main page</a> for general information about PROJECT-TITLE
+      See <a href="https://...repo-owner....github.io/...repo-name..." onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='/'; alert('Dev environment detected - switching to local version');}">main page</a> for general information about ...project-title...
     </p>
     ```
 
@@ -53,13 +53,24 @@ Best used in templates for repos, cf. [template-gh](#hh-lohmann-template-gh)
 
   * Copy appropriate example from [Synopsis](#synopsis) to a "Demo" section of your project's README
   
-  * Replace OWNER with the owner of the repo and REPO with the name of the repo
+  * Replace placeholders
+    * `...repo-owner...` with the owner of the repo
+      * e.g.: `joe-doe`
+    * `...repo-name...` with the name of the repo
+      * e.g.: `my-fantastic-project`
 
 * **From demos to README**
 
   * Copy example from [Synopsis](#synopsis) to to the beginning of your "Demo" page
   
-  * Replace OWNER with the owner of the repo and REPO with the name of the repo and PROJECT-TITLE with the title of your project
+  * Replace placeholders
+    * `...repo-owner...` with the owner of the repo
+      * e.g.: `joe-doe`
+    * `...repo-name...` with the name of the repo
+      * e.g.: `my-fantastic-project`
+    * `...project-title...` with the name of the repo
+      * e.g.: `Approach fantastic things without losing time for planning`
+
 
 
 
