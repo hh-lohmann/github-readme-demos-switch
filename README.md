@@ -24,11 +24,7 @@ A link to demos with really running code is a valuable feature for code projects
     ```html
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
     <p id="github_readme_demos_switch">
-      See <a href="https://OWNER.github.io/REPO/demos"
-      onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
-      || location.hostname === 'localhost' ){ this.href='./demos/';
-      alert( 'Dev environment detected - switching to local version' ); }"
-      >demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
+      See <a href="https://OWNER.github.io/REPO/demos" onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === '' || location.hostname === 'localhost' ){ this.href='./demos/'; alert( 'Dev environment detected - switching to local version' ); }">demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
     </p>
     ```
 
@@ -44,11 +40,7 @@ A link to demos with really running code is a valuable feature for code projects
     ```html
     <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
     <p id="github_readme_demos_switch">
-      See <a href="https://OWNER.github.io/REPO"
-      onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
-      || location.hostname === 'localhost' ){ this.href='/';
-      alert( 'Dev environment detected - switching to local version' ); }"
-      >main page</a> for general information about ...project-title...
+      See <a href="https://OWNER.github.io/REPO" onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === '' || location.hostname === 'localhost' ){ this.href='/'; alert( 'Dev environment detected - switching to local version' ); }">main page</a> for general information about ...project-title...
     </p>
     ```
 
